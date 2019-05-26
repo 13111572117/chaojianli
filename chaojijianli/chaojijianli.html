@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./layui/layui.js"></script>
+    <title>超级简历</title>
+    <!-- header -->
+    <style>
+
+    </style>
+
+    <!-- content -->
+    <style>
+
+    </style>
+
+    <!-- footer -->
+    <style>
+
+    </style>
+</head>
+<body>
+<!--ji qi ren zi xun-->
+<div class="jiqiren">
+    <div class="zixun site-demo-button" id="Zixun">
+        <button data-method="notice" class="layui-icon layui-icon-reply-fill layui-btn"></button>
+    </div>
+    <div id="Zixunk"
+         style="display: none;/*position: fixed;bottom: 50px;right:15%;transform: translateX(15%);*/z-index:10;width: 364px;height: 550px;background-color: #adadad">
+        <div style="height: 60px;font-size: 14px;background-color: #ff4f4c;color: #fff">
+            <i style="font-size: 40px;float: left;margin: 10px 0 0 10px"
+               class="zixun-header layui-icon layui-icon-survey"></i>
+            <h3 style="float: left; margin: 20px 0 0 20px">超级简历机器人</h3>
+            <button style="float: right;background-color:#ff4f4c;border:0;color: #fff;margin: 20px 10px 0 0">一</button>
+        </div>
+        <div style="height:376px;padding: 20px 20px 0 20px;background-color: #f5f8fa" class="zixun-nav">
+            <p style="color: #9b9b9b;">超级简历机器人 10:05:45 </p>
+            <p style="width: 60%;padding:5px 5px 5px 5px;border-radius: 10px;background-color: #fff;">您好，很高兴为您服务！</p>
+        </div>
+        <div style="padding:10px 10px 10px 10px;background-color: #fff;" class="zixun-fasong">
+            <div class="rengong">
+                <i style="font-size: 25px;color: #ff4f4c;" class="layui-icon layui-icon-praise"></i>
+                <button style="border: 0;color: #999999;background-color: #fff;float: right">转人工</button>
+            </div>
+            <div style="margin: 10px 0 0 0 ;padding-bottom:20px" class="input">
+                <input style="width: 80%;background-color: #fff;border: 0" type="text" class=""
+                       placeholder="很高兴为您服务，请描述您的问题">
+                <button style="float: right;padding:0 5px 0 5px;margin: 15px 0 5px 0;">发送</button>
+            </div>
+        </div>
+        <div style="width: 100%;text-align: center;background-color: #eee;margin-top: 0px">
+            <p style="">Udesk提供客服软件支持</p>
+        </div>
+    </div>
+</div>
+<!-- header -->
+<header class="max-header layui-container">
+    <div class="main-header layui-row">
+        <div class="header-logo layui-col-lg3 layui-col-md2 layui-col-sm2 layui-col-xs4">
+            <a href="./chaojijianli.html"><img src="./images/chjjl-logo..png" alt=""></a>
+        </div>
+        <ul class="header-tittle layui-col-lg5 layui-col-md6">
+            <li>
+                <a href="./jianlimoban.html">简历模板</a>
+            </li>
+            <li>
+                <a href="./qiuzhixin.html">求职信</a>
+            </li>
+            <li>
+                <a href="./jianligonglue.html">简历攻略</a>
+            </li>
+            <li>
+                <a href="./zhenduan.html">简历诊断</a>
+            </li>
+            <li>
+                <a href="./mingqineitui.html">名企内推</a>
+            </li>
+        </ul>
+        <div class="header-home layui-col-sm5 layui-col-xs3">
+            <div class="home-icon layui-icon layui-icon-spread-left">
+                <ul class="home-ul">
+                    <li>
+                        <a href="./jianlimoban.html">简历模板</a>
+                    </li>
+                    <li>
+                        <a href="./qiuzhixin.html">求职信</a>
+                    </li>
+                    <li>
+                        <a href="./jianligonglue.html">简历攻略</a>
+                    </li>
+                    <li>
+                        <a href="./zhenduan.html">简历诊断</a>
+                    </li>
+                    <li>
+                        <a href="./mingqineitui.html">名企内推</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-app layui-col-lg4 layui-col-md4 layui-col-sm5 layui-col-xs5">
+            <div class="app-tubiao">
+                <div class="app-earth layui-icon layui-icon-website">
+                    <div class="language">
+                        <ul>
+                            <li><a href="">中文</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-iphone layui-icon layui-icon-cellphone">
+                    <div class="app-download">
+                        <h3>扫码下载App 同步编辑</h3>
+                        <img src="./images/appDownloadIcon.png" alt="">
+                        <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">App下载</button>
+                        <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">微信版</button>
+                    </div>
+                </div>
+                <div class="ge">
+                    <a href="">|</a>
+                </div>
+            </div>
+            <div class="app-button">
+                <button class="app-dl layui-btn layui-btn-danger"><a href="./登录注册/qitafanshidenglu.html">登录</a></button>
+                <button class="layui-btn layui-btn-danger"><a href="./登录注册/qitafanshidenglu.html">注册</a></button>
+                <button class="layui-btn layui-btn-md layui-btn-danger">导入模板</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- content -->
+<div class="content">
+    <div class="content-banner">
+        <div class="banner-title layui-row">
+            <h1 class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                名企精英都在用的专业简历
+            </h1>
+            <p class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                百万人才使用的智能简历工具，帮你快速制作一份优秀简历，斩获高薪 Offer
+            </p>
+        </div>
+        <div class="banner-bt" id="dowApp">
+            <button data-method="notice" class="xiazaiApp layui-btn layui-btn-danger">免费生成专业监理</button>
+            <div id="erWeima" class="" style="display: none;width:300px;height:auto;padding:20px 0 20px 25px">
+                <img style="width:300px;height:auto" src="./images/下载.png" alt="">
+                <i style="text-align: center;display:block;margin: 20px 0 20px 0;color: #379b54;"
+                   class="layui-icon layui-icon-login-wechat">
+                    <p style="color: #333333;float: right;margin-right: 50px"> 扫码立即生成专业简历</p>
+                </i>
+                <a style="text-decoration: inherit;border-bottom:1px solid #9b9b9b;color: #9b9b9b;" href="">其他注册方式</a>
+            </div>
+        </div>
+        <div class="banner-shangbiao">
+            <img src="./images/lp_new_company.png" alt="">
+        </div>
+        <div class="video">
+            <!-- <div class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-xs12"> -->
+            <video class="banner-video lp-to-cvs" id="lp-video" autoplay="" muted="" loop="" poster="" width="986px"
+                   preload="auto" playsinline="playsinline" webkit-playsinline="true" autostart="0">
+                <source src="https://files.wondercv.com/%E9%A6%96%E9%A1%B5%E8%A7%86%E9%A2%91_v3.ogg" type="video/ogg">
+                <source src="https://files.wondercv.com/%E9%A6%96%E9%A1%B5%E8%A7%86%E9%A2%91_v3.mp4" type="video/mp4">
+                您的浏览器不支持播放视频, 建议您使用 Chrome浏览器 进行访问。
+            </video>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="contenat-seconde">
+        <div class="layui-row">
+            <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 layui-col-xs12">
+                <i class="layui-icon layui-icon-upload"></i>
+                <a href="">数据云存储</a>
+            </div>
+            <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 layui-col-xs12">
+                <i class="layui-icon layui-icon-password"></i>
+                <a href="">建立信息加密</a>
+            </div>
+            <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 layui-col-xs12">
+                <i class="layui-icon layui-icon-form"></i>
+                <a href="">ATS匹配筛查</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-last layui-container">
+
+        <div class="last-title layui-row">
+            <h1 class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                选择你的简历模板
+            </h1>
+            <p class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                选对专业的简历模板，帮你提高 2 倍求职成功率
+            </p>
+        </div>
+        <div class="last-moban layui-row">
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/11.png" alt="">
+                    <h3>零经验实习模板</h3>
+                    <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/2.png" alt="">
+                    <h3>学生求职模板</h3>
+                    <p>此模板适用于学生找实习或全职工作，有一定实习经历的同学</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/33.png" alt="">
+                    <h3>申请研究生模板</h3>
+                    <p>此模板适用于学生申请国内及海外的研究生，或考研复试时使用</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/4.png" alt="">
+                    <h3>本科留学模板</h3>
+                    <p>此模板仅适用于高中生，申请国外本科留学，有针对性的英文案例和引导</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/5.png" alt="">
+                    <h3>经典工作模式</h3>
+                    <p>此模板适用于工作经验一年以上，想要变动工作的人士，适用于全行业</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/6.png" alt="">
+                    <h3>投行咨询模板</h3>
+                    <p>此模板适用于寻求投行，咨询，四大或外企工作岗位的人士</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/7.png" alt="">
+                    <h3>产品经理模板</h3>
+                    <p>此模板适用于申请互联网行业的产品相关岗位，有针对性的模块和引导</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="moban-test layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6 ">
+                <div>
+                    <img src="./images/8.png" alt="">
+                    <h3>程序员模板</h3>
+                    <p>此模板适用于互联网行业的程序员和技术求职者找全职工作、跳槽时使用</p>
+                    <ul class="moban-test2 layui-row site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">中文模板
+                        </button>
+                        <button data-method="notice" style="margin: 20px 0 20px 5%;"
+                                class="layui-btn layui-btn-primary">英文模板
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="last-pannel">
+            <div class="pannel-jlmb layui-row">
+                <img class="layui-col-lg6 layui-col-md6 layui-col-sm6 layui-col-xs12"
+                     src="./images/chenyuanyuan.png" alt="">
+                <div class="pannel-jieshao layui-col-lg6 layui-col-md6 layui-col-sm6 layui-col-xs12" id="dowApp2">
+                    <div class="zhuanye">专业</div>
+                    <h1>超级简历由人力资源专家设计并推荐</h1>
+                    <p>简历是为了展示你专业的工作能力，而市面上大量花哨而不适用的模板，不但浪费选择的时间和购买模板的金钱，甚至会给你的简历减分。</p>
+                    <p>超级简历获得了著名人力资源公司、金融机构、大型互联网公司的 HR 和业务部门负责招聘负责人的强烈认可和推荐。简历，只要做一份专业的。立即制作专业</p>
+                    <button data-method="notice" class="layui-btn ayui-btn layui-btn-lg layui-btn-danger">立即制作专业简历
+                    </button>
+                </div>
+            </div>
+            <div class="pannel-jlmb layui-row">
+                <img class="jieshaotu layui-col-lg7 layui-col-md7 layui-col-sm7 layui-col-xs12"
+                     src="./images/new_update_lp_demo1_zh-CN.png" alt="">
+                <div class="pannel-jieshao layui-col-lg5 layui-col-md5 layui-col-sm5 layui-col-xs12" id="dowApp3">
+                    <div class="zhuanye">高效</div>
+                    <h1>专业的简历排版，自动排版，一键优化</h1>
+                    <p>不管写多少东西，删改多少次，都不需要在排版上浪费一点时间。</p>
+                    <p>刚好一页纸，一键自动优化排版，让你专注于写出自己的优势，确保得到 HR 的注意和肯定。</p>
+                    <button data-method="notice" class="layui-btn ayui-btn layui-btn-lg layui-btn-danger">立即制作专业简历
+                    </button>
+                </div>
+                <img class="jieshaotu2 layui-col-lg7 layui-col-md7 layui-col-sm7 layui-col-xs12"
+                     src="./images/new_update_lp_demo1_zh-CN.png" alt="">
+            </div>
+            <div class="pannel-jlmb layui-row">
+                <img class="layui-col-lg7 layui-col-md7 layui-col-sm7 layui-col-xs12"
+                     src="./images/new_lp_demo2_zh-CN.png" alt="">
+                <div class="pannel-jieshao layui-col-lg5 layui-col-md5 layui-col-sm5 layui-col-xs12" id="dowApp4">
+                    <div class="zhuanye">简单</div>
+                    <h1>详尽的引导、示例，填空就能写出的好简历</h1>
+                    <p>跟随引导一步一步整理你的经历，每一步都会为你提供专业的建议和例子，彻底告别“废话”和“写不出来”。</p>
+                    <p>只需要填空就能写出 HR 真正关心的问题，突出你的能力和优势。</p>
+                    <button data-method="notice" class="layui-btn ayui-btn layui-btn-lg layui-btn-danger">立即制作专业简历
+                    </button>
+                </div>
+            </div>
+            <div class="pannel-jlmb layui-row">
+                <img class="jieshaotu layui-col-lg7 layui-col-md7 layui-col-sm7 layui-col-xs12"
+                     src="./images/new_lp_demo3_zh-CN.png" alt="">
+                <div class="pannel-jieshao layui-col-lg5 layui-col-md5 layui-col-sm5 layui-col-xs12" id="dowApp5">
+                    <div class="zhuanye">反馈</div>
+                    <h1>即时反馈和简历提示建议，修改一下，直达梦想工作</h1>
+                    <p>自动简历优化反馈，迅速帮你了解简历上的不足，更能帮你快速分析和理想工作的差距。</p>
+                    <p>更有业界知名的导师辅导，让全球名企的实战经验，帮你大幅提升获得面试的概率。</p>
+                    <button data-method="notice" class="layui-btn ayui-btn layui-btn-lg layui-btn-danger">立即制作专业简历
+                    </button>
+                </div>
+                <img class="jieshaotu2 layui-col-lg7 layui-col-md7 layui-col-sm7 layui-col-xs12"
+                     src="./images/new_lp_demo3_zh-CN.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content-qiuzhi layui-container">
+        <div class="last-title layui-col-xs12">
+            <h1 class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                求职攻略
+            </h1>
+            <p class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                简历 / 面试 / 跳槽 / 职场发展
+            </p>
+        </div>
+        <div class="layui-row layui-col-space30">
+            <div class="qiuzhi-nav layui-col-lg6 layui-col-md6 layui-col-sm12 layui-col-xs12">
+                <div class="layui-row grid-demo">
+                    <div class="qiuzhi-tittle layui-col-xs12">
+                        <a href="">精选推荐</a>
+                    </div>
+                    <div class="qiuzhi-jingxuan layui-row">
+                        <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 layui-col-xs4">
+                            <img src="./images/nr1.png" alt="">
+                        </div>
+                        <div class="layui-col-lg8 layui-col-md8 layui-col-sm8 layui-col-xs8">
+                            <h2>
+                                <a href="">2019 春招求职礼包大放送 | 各行业笔试面经</a>
+                            </h2>
+                            <p href="">【春招全攻略】大礼包，2019 最新各行业面试经验总结，300+ 公司笔试含答案真题，四大、银行、互联网大厂 2018 真题，1000...</p>
+                        </div>
+                    </div>
+                    <div class="qiuzhi-jingxuan layui-row">
+                        <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 layui-col-xs4">
+                            <img src="./images/nr2.jpg" alt="">
+                        </div>
+                        <div class="layui-col-lg8 layui-col-md8 layui-col-sm8 layui-col-xs8">
+                            <h2>
+                                <a href="">干货 | 简历上的哪些内容才是HR眼中的干货？</a>
+                            </h2>
+                            <p href="">简历千万不要写成JD，工作内容是千篇一律的，要体现出你的价值就要学会写好这些干货,想要知道什么是“干货”，我们可以先说一下干货的反义词...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qiuzhi-nav layui-col-lg6 layui-col-md6 layui-col-sm12 layui-col-xs12">
+                <div class="qiuzhi-tittle layui-col-xs12">
+                    <a href="">最新发布</a>
+                </div>
+                <div class="qiuzhi-nav layui-row grid-demo layui-col-space30">
+                    <div class="layui-row layui-col-space30">
+                        <div class="qiuzhi-fabu layui-col-lg6 layui-col-md6 layui-col-sm6 layui-col-xs6">
+                            <ul>
+                                <li>
+                                    <a href="">英文简历免费模板下载，英文简历范...</a>
+                                </li>
+                                <li>
+                                    <a href="">制作外企求职英文简历的注意事项</a>
+                                </li>
+                                <li>
+                                    <a href="">大学生外企实习英文简历模板（包...</a>
+                                </li>
+                                <li>
+                                    <a href="">编辑在线简历的四大原则</a>
+                                </li>
+                                <li>
+                                    <a href="">简历制作的技巧通常包含哪些方面的...</a>
+                                </li>
+                                <li>
+                                    <a href="">掌握大学生简历的撰写技巧，让求职...</a>
+                                </li>
+                                <li>
+                                    <a href="">为什么很多职位招聘只要应届生？</a>
+                                </li>
+                                <li>
+                                    <a href="">优秀求职简历样本举例，帮你写出...</a>
+                                </li>
+                                <li>
+                                    <a href="">暑期实习生简历怎么写?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="qiuzhi-fabu layui-col-lg6 layui-col-md6 layui-col-sm6 layui-col-xs6">
+                            <ul>
+                                <li>
+                                    <a href="">大学生怎么写出专业英文简历</a>
+                                </li>
+                                <li>
+                                    <a href="">简历中语言能力怎么写？</a>
+                                </li>
+                                <li>
+                                    <a href="">个人留学简历怎么写？</a>
+                                </li>
+                                <li>
+                                    <a href="">制作优秀求职简历的技巧</a>
+                                </li>
+                                <li>
+                                    <a href="">大学生实习面试需要做好哪些方面...</a>
+                                </li>
+                                <li>
+                                    <a href="">应届生如何判断一家公司是否值得...</a>
+                                </li>
+                                <li>
+                                    <a href="">写简历的注意事项有哪些？那些简...</a>
+                                </li>
+                                <li>
+                                    <a href="">大学生如何写好大三实习生简历？</a>
+                                </li>
+                                <li>
+                                    <a href="">大学生简历的内容怎么写才能更丰...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-lg12 layui-col-md12">
+                <div class="qiuzhi-huati layui-row grid-demo">
+                    <div class="qiuzhi-tittle layui-col-xs12">
+                        <a href="">热门话题</a>
+                    </div>
+                    <div class="qiuzhi-remen layui-row layui-col-space30">
+                        <div class="layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6">
+                            <img src="./images/nr3.jpg" alt="">
+                        </div>
+                        <div class="layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6">
+                            <img src="./images/nr4.jpg" alt="">
+                        </div>
+                        <div class="layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6">
+                            <img src="./images/nr5.jpg" alt="">
+                        </div>
+                        <div class="layui-col-lg3 layui-col-md3 layui-col-sm6 layui-col-xs6">
+                            <img src="./images/nr6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content-fankui layui-container">
+        <div class="layui-row">
+            <div class="last-title layui-col-xs12">
+                <img src="./images/lp_bottom_punc.png" alt="">
+                <h1 class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                    用户反馈
+                </h1>
+                <p class="layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-lxs12">
+                    他们都推荐超级简历
+                </p>
+            </div>
+            <div class="fankui-lunbo layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-xs12 layui-carousel"
+                 id="test1">
+                <div class="lunbo-item" carousel-item>
+                    <div class="item-jl">
+                        <div class="item-tittle">
+                            <a href="">
+                                作为一个专业猎头，我看的职位是比较高级的，但是拿到的简历也是五花八门各种样子的都有。为了能够更好的把他们展示给雇主单位，很多简历我都会和候选人详聊之后重新制作。
+                                一般我都是用国外的编辑器和Word按照我做好的习惯模板去制作，直到发现超级简历，比用自己做好的模板还要方便快捷，确实是我用过最好用的编辑器，希望超级简历能够开发能让我们更好管理简历的功能就更好了。
+                            </a>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./images/lunbo1.png" alt="">
+                            <a href="">刘萌萌</a>
+                            <a href="">互联网公司猎头</a>
+                        </div>
+                    </div>
+                    <div class="item-jl">
+                        <div class="item-tittle">
+                            <a href="">我每年会看上千份简历，好的简历基本上一眼就能看出来。大多数求职者即便失败了也不会意识到，从简历的样式和逻辑他就已经被刷下去了。说实话，10秒内看不到重点的简历就会让我很烦躁，尤其是一些各种图表、文字没有内容、简历过长等等信息展示不清楚的简历都不会再看第二眼。超级简历生成的简历非常清晰专业，让人眼前一亮，我希望我收到的每份简历都能是这个样子。
+                            </a>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./images/张晓涵.png" alt="">
+                            <a href="">张晓涵</a>
+                            <a href="">基金人力资源招聘总监</a>
+                        </div>
+                    </div>
+                    <div class="item-jl">
+                        <div class="item-tittle">
+                            <a href="">真的很喜欢超级简历这个产品，我的简历都是用超级简历做出来的，很方便，而且做出来特别漂亮和高大上。 正好借这个机会，向贵团队致谢，感谢你们开发出这款产品，给我们求职狗帮了很大的忙！我也把这个产品推荐给了身边几个朋友，不过都是好朋友，关系不好的不舍的推荐…不要怪我，这款产品真的好，再次致谢！
+                            </a>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./images/李守凯@2x.png" alt="">
+                            <a href="">李守凯</a>
+                            <a href="">工商管理学院大四学生</a>
+                        </div>
+                    </div>
+                    <div class="item-jl">
+                        <div class="item-tittle">
+                            <a href="">通过WonderCV制作的简历让我拿到了第一个Offer，真的非常感谢！我之前是拿同学的简历模板，也曾在网上下载所谓的“漂亮模版”，在排版修改上反而又花了很多时间，而且不好意思的说，因为照搬模板给的经历更是给自己求职路上埋坑。 用了超级简历我才知道怎么去总结和描写自己的经历，专业高级就更不用说了，完全不用在排版上再纠结真的是很感动，作为超级简历的铁杆粉，真诚的推荐给将要迈入职场的各位同学！
+                            </a>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./images/黄涛.png" alt="">
+                            <a href="">黄涛 Cydia</a>
+                            <a href="">人民大学应届生</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="fankui-tubiao layui-row">
+            <img src="./images/lp_new_bottom_company.png" alt="">
+        </div>
+    </div>
+
+</div>
+<!--    footer-->
+<footer class="footer">
+    <div class="footer-back">
+        <div class="footer-entrance layui-row layui-col-lg8 layui-col-md8 layui-col-sm8 layui-col-xs8" id="dowApp6">
+            <div class=" layui-col-lg5 layui-col-md5 layui-col-sm6 layui-col-xs12">
+                <h2 class="entrance">现在就用超级简历获得面试</h2>
+            </div>
+            <button data-method="notice"
+                    class="layui-btn layui-btn-primary layui-col-lg2 layui-col-md2 layui-col-sm3 layui-col-xs8 layui-col-md-offset4 layui-col-xs-offset2">
+                免费创建简历
+            </button>
+        </div>
+        <div class="footer-ctn layui-container">
+            <div class="footer-nav layui-row">
+                <div class="footer-ewm layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                    <img src="./images/chjjl-logo..png" alt="">
+                    <img src="./images/erweima.png" alt="">
+                </div>
+                <div class="footer-tittle layui-col-lg8 layui-col-md8 layui-col-sm12 layui-col-xs12">
+                    <div class="layui-row">
+                        <ul class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2 layui-col-xs-offset1">
+                            <li><a href="">联系我们</a></li>
+                            </a>
+                            <li><a href="">在线客服</a></li>
+                            <li><a href="">微信</a></li>
+                            <li><a href="">微博</a></li>
+                            <li><a href="">知乎</a></li>
+                        </ul>
+                        <ul class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">产品介绍</a></li>
+                            <li><a href="">使用条款</a></li>
+                            <li><a href="">隐私协议</a></li>
+                            <li><a href="">加入我们</a></li>
+                            <li><a href="">网站地图</a></li>
+                        </ul>
+                        <ul class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                            <li><a href="">快速进入</a></li>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">我的简历</a></li>
+                            <li><a href="">简历攻略</a></li>
+                            <li><a href="">导师辅助</a></li>
+                            <li><a href="">职位列表</a></li>
+                        </ul>
+                        <ul class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                            <li><a href="">简历模板</a></li>
+                            <li><a href="">学生简历模板</a></li>
+                            <li><a href="">英文简历模板</a></li>
+                            <li><a href="">程序员简历模板</a></li>
+                            <li><a href="">经典工作简历</a></li>
+                            <li><a href="">春招礼包</a></li>
+                        </ul>
+                        <ul class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                            <li><a href="">其他产品</a></li>
+                            <li><a href="">下载App</a></li>
+                            <li><a href="">微信小程序</a></li>
+                            <li><a href="">大牛简历</a></li>
+                            <li><a href="">微信名片</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-language layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+                    <button class="layui-btn layui-btn-danger layui-icon layui-icon-website"> 切换语言</button>
+                </div>
+                <div class="footer-bottom layui-col-lg8 layui-col-md8 layui-col-sm8 layui-col-xs8 layui-col-xs-offset2">
+                    <p>合作伙伴： LinkedIn 智联招聘 前程无忧 猎聘 问卷网 华军软件园</p>
+                    <p>友情链接（+QQ:409259639）： 简历模板 考试宝典 人民大学在职研究 大同人事考试网 武汉拓展培训 金华人才网</p>
+                    <p>论文查重 查职位 衡阳人才网 漳州人才网 IT在线教育 漳州公务员考试网 金融人才网 在线英语 健康管理师 中小学辅导网</p>
+                    <p>无界空间</p>
+                </div>
+                <div class="footer-copy layui-row">
+                    <p class="layui-icon layui-icon-circle-dot">2019 超级简历 WonderCV wondercv.com | 京ICP备17055181号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+</body>
+<script>
+    //弹出窗口
+    layui.use('layer', function () { //独立版的layer无需执行这一句
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+        //触发事件
+        var active = {
+            notice: function () {
+                //示范一个公告层
+                layer.open({
+                    type: 1
+                    ,
+                    title: false //不显示标题栏
+                    ,
+                    closeBtn: false
+                    ,
+                    area: '1050px;'
+                    ,
+                    shade: 0.8
+                    ,
+                    id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                    ,
+                    btn: ['使用模板', '关闭模板']
+                    ,
+                    btnAlign: 'c'
+                    ,
+                    moveType: 1 //拖拽模式，0或者1
+                    ,
+                    content: '<div style="width：500px;height:679px;"><img style="width:1000px;height:auto" src="./images/chenyuanyuan.png" alt=""></div>'
+                    ,
+                    success: function (layero) {
+                        var btn = layero.find('.layui-layer-btn');
+                        btn.find('.layui-layer-btn0').attr({
+                            href: ''
+                            , target: '_blank'
+                        });
+                    }
+                });
+            }
+        };
+        $('#layerDemo .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        // });
+
+        var active = {
+            notice: function () {
+                //示范一个公告层
+                layer.open({
+                    type: 1
+                    , title: false //不显示标题栏
+                    , closeBtn: false
+                    , area: '350px;'
+                    , shade: 0.8
+                    , id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                    // ,btn: ['使用模板','关闭模板']
+                    , a: ['其他注册方式']
+                    , btnAlign: 'c'
+                    , shadeClose: 'false'
+                    , moveType: 1 //拖拽模式，0或者1
+                    , content: $('#erWeima')
+                    , success: function (layero) {
+                        var btn = layero.find('.layui-layer-btn');
+                        btn.find('.layui-layer-btn0').attr({
+                            href: ''
+                            , target: '_blank'
+                        });
+                    }
+                });
+            }
+        };
+
+        // 咨询
+        var active = {
+            notice: function () {
+                //示范一个公告层
+                layer.open({
+                    type: 1
+                    , offset: ['20%', '55%']
+                    , scrollbar: false   //是否显示滚动条
+                    , title: false //不显示标题栏
+                    , closeBtn: false
+                    , area: ['364px', '600px']
+                    , shade: 0.5    //遮罩
+                    , id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                    // ,btn: ['使用模板','关闭模板']
+                    , a: ['其他注册方式']
+                    , btnAlign: 'c'
+                    , shadeClose: 'true'   //是否点击遮罩关闭
+                    , moveType: 1 //拖拽模式，0或者1
+                    , content: $('#Zixunk')
+                    , success: function (layero) {
+                        var btn = layero.find('.layui-layer-btn');
+                        btn.find('.layui-layer-btn0').attr({
+                            href: ''
+                            , target: '_blank'
+                        });
+                    }
+                });
+                layer.style(index, {
+                    width: '1000px',
+                    top: '10px'
+                });
+            }
+        };
+        $('#dowApp .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#dowApp2 .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#dowApp3 .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#dowApp4 .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#dowApp5 .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#dowApp6 .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+        $('#Zixun .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+    });
+
+    //轮播
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '100%' //设置容器宽度
+            , height: '300px'
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./layui/layui.js">
+    </script>
+    <script src="./js/zixunjiqiren.js"></script>
+    <title>求职信</title>
+
+    <style>
+        .zhd-title {
+            border-bottom: 2px solid #FF4F4C;
+            padding-bottom: 10px;
+            font-size: 15px;
+        }
+        .zhd-title a{
+            color: #FF4F4C;
+        }
+        .quanzhi {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(245, 245, 247);
+            text-align: center;
+
+        }
+
+        .header h1 {
+            color: rgb(51, 54, 53);
+            margin-top: 60px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .header p {
+            font-size: 15px;
+            text-align: center;
+            color: rgb(165, 167, 170);
+            margin-top: 25px;
+        }
+
+        .footer img {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #k {
+            display: none;
+
+
+        }
+
+        #k p {
+            color: rgb(144, 148, 151);
+            text-align: center
+        }
+
+        @media screen and (max-width: 600px) {
+            .header h1:nth-of-type(1) {
+                font-size: 25px;
+            }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<!--ji qi ren zi xun-->
+<div class="jiqiren">
+    <div class="zixun site-demo-button" id="Zixun">
+        <button data-method="notice" class="layui-icon layui-icon-reply-fill layui-btn"></button>
+    </div>
+    <div id="Zixunk"
+         style="display: none;/*position: fixed;bottom: 50px;right:15%;transform: translateX(15%);*/z-index:10;width: 364px;height: 550px;background-color: #adadad">
+        <div style="height: 60px;font-size: 14px;background-color: #ff4f4c;color: #fff">
+            <i style="font-size: 40px;float: left;margin: 10px 0 0 10px"
+               class="zixun-header layui-icon layui-icon-survey"></i>
+            <h3 style="float: left; margin: 20px 0 0 20px">超级简历机器人</h3>
+            <button style="float: right;background-color:#ff4f4c;border:0;color: #fff;margin: 20px 10px 0 0">一</button>
+        </div>
+        <div style="height:376px;padding: 20px 20px 0 20px;background-color: #f5f8fa" class="zixun-nav">
+            <p style="color: #9b9b9b;">超级简历机器人 10:05:45 </p>
+            <p style="width: 60%;padding:5px 5px 5px 5px;border-radius: 10px;background-color: #fff;">您好，很高兴为您服务！</p>
+        </div>
+        <div style="padding:10px 10px 10px 10px;background-color: #fff;" class="zixun-fasong">
+            <div class="rengong">
+                <i style="font-size: 25px;color: #ff4f4c;" class="layui-icon layui-icon-praise"></i>
+                <button style="border: 0;color: #999999;background-color: #fff;float: right">转人工</button>
+            </div>
+            <div style="margin: 10px 0 0 0 ;padding-bottom:20px" class="input">
+                <input style="width: 80%;background-color: #fff;border: 0" type="text" class=""
+                       placeholder="很高兴为您服务，请描述您的问题">
+                <button style="float: right;padding:0 5px 0 5px;margin: 15px 0 5px 0;">发送</button>
+            </div>
+        </div>
+        <div style="width: 100%;text-align: center;background-color: #eee;margin-top: 0px">
+            <p style="">Udesk提供客服软件支持</p>
+        </div>
+    </div>
+</div>
+
+<!-- header -->
+<header class="max-header layui-container">
+    <div class="main-header layui-row">
+        <div class="header-logo layui-col-lg3 layui-col-md2 layui-col-sm2 layui-col-xs4">
+            <a href="./chaojijianli.html"><img src="./images/chjjl-logo..png" alt=""></a>
+        </div>
+        <ul class="header-tittle layui-col-lg5 layui-col-md6">
+            <li>
+                <a href="./jianlimoban.html">简历模板</a>
+            </li>
+            <li style="margin-left:40px;padding-left: 0px" class="zhd-title">
+                <a href="./zhenduan.html">求职信</a>
+            </li>
+            <li>
+                <a href="./jianligonglue.html">简历攻略</a>
+            </li>
+            <li>
+                <a href="./zhenduan.html">简历诊断</a>
+            </li>
+            <li>
+                <a href="./mingqineitui.html">名企内推</a>
+            </li>
+        </ul>
+        <div class="header-home layui-col-sm5 layui-col-xs3">
+            <div class="home-icon layui-icon layui-icon-spread-left">
+                <ul class="home-ul">
+                    <li>
+                        <a href="./jianlimoban.html">简历模板</a>
+                    </li>
+                    <li>
+                        <a href="./qiuzhixin.html">求职信</a>
+                    </li>
+                    <li>
+                        <a href="./jianligonglue.html">简历攻略</a>
+                    </li>
+                    <li>
+                        <a href="./zhenduan.html">简历诊断</a>
+                    </li>
+                    <li>
+                        <a href="./mingqineitui.html">名企内推</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-app layui-col-lg4 layui-col-md4 layui-col-sm5 layui-col-xs5">
+            <div class="app-tubiao">
+                <div class="app-earth layui-icon layui-icon-website">
+                    <div class="language">
+                        <ul>
+                            <li><a href="">中文</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-iphone layui-icon layui-icon-cellphone">
+                    <div class="app-download">
+                        <h3>扫码下载App 同步编辑</h3>
+                        <img src="./images/appDownloadIcon.png" alt="">
+                        <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">App下载</button>
+                        <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">微信版</button>
+                    </div>
+                </div>
+                <div class="ge">
+                    <a href="">|</a>
+                </div>
+            </div>
+            <div class="app-button">
+                <button class="app-dl layui-btn layui-btn-danger"><a href="">登录</a></button>
+                <button class="layui-btn layui-btn-danger"><a href="">注册</a></button>
+                <button class="layui-btn layui-btn-md layui-btn-danger">导入模板</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="yemian">
+    <div class="quanzhi">
+        <div class=" header layui-row">
+            <div class="layui-col-md12  layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-xs12">
+                <h1>求职信Jobmail.vip专业邮箱</h1>
+            </div>
+            <div class="layui-col-md12  layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-xs12">
+                <p>提供多场景求职邮件模板，用一封吸引HR的求职信，助你大幅提高建立通过率</p>
+            </div>
+        </div>
+        <div class="  layui-col-md12  layui-col-lg12 layui-col-md12 layui-col-sm12 layui-col-xs12 site-demo-button"
+             id="layerDemo" style="margin-bottom: 0;margin-top: 40px;">
+            <button data-method="offset" data-type="auto" class="shiyong layui-btn layui-btn-danger layui-btn-lg"
+                    style="margin: 0 auto;">立即使用
+            </button>
+
+
+        </div>
+        <div class="footer ">
+            <img src="./images/浏览器_渐变2@2x.png">
+        </div>
+    </div>
+    <div id="k" style="width: 200px; height: 220px;">
+        <img style="height: 200px;width: 200px" src="./images/下载.png">
+        <p>扫码关注注册专业邮箱</p>
+    </div>
+</div>
+</body>
+
+
+<script>
+
+    layui.use('layer', function () { //独立版的layer无需执行这一句
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+        //触发事件
+        var active = {
+            setTop: function () {
+                var that = this;
+                //多窗口模式，层叠置顶
+                layer.open({
+                    type: 2 //此处以iframe举例
+                    , title: '当你选择该窗体时，即会在最顶端'
+                    , area: ['390px', '260px']
+                    , shade: 0
+                    , maxmin: true
+                    , offset: [ //为了演示，随机坐标
+                        Math.random() * ($(window).height() - 300)
+                        , Math.random() * ($(window).width() - 390)
+                    ]
+                    , content: '//layer.layui.com/test/settop.html'
+                    , btn: ['继续弹出', '全部关闭'] //只是为了演示
+                    , yes: function () {
+                        $(that).click();
+                    }
+                    , btn2: function () {
+                        layer.closeAll();
+                    }
+
+                    , zIndex: layer.zIndex //重点1
+                    , success: function (layero) {
+                        layer.setTop(layero); //重点2
+                    }
+                });
+            }
+            , confirmTrans: function () {
+                //配置一个透明的询问框
+                layer.msg('大部分参数都是可以公用的<br>合理搭配，展示不一样的风格', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['明白了', '知道了', '哦']
+                });
+            }
+            , notice: function () {
+                //示范一个公告层
+                layer.open({
+                    type: 1
+                    ,
+                    title: false //不显示标题栏
+                    ,
+                    closeBtn: false
+                    ,
+                    area: '300px;'
+                    ,
+                    shade: 0.8
+                    ,
+                    id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                    ,
+                    btn: ['火速围观', '残忍拒绝']
+                    ,
+                    btnAlign: 'c'
+                    ,
+                    moveType: 1 //拖拽模式，0或者1
+                    ,
+                    content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">你知道吗？亲！<br>layer ≠ layui<br><br>layer只是作为Layui的一个弹层模块，由于其用户基数较大，所以常常会有人以为layui是layerui<br><br>layer虽然已被 Layui 收编为内置的弹层模块，但仍然会作为一个独立组件全力维护、升级。<br><br>我们此后的征途是星辰大海 ^_^</div>'
+                    ,
+                    success: function (layero) {
+                        var btn = layero.find('.layui-layer-btn');
+                        btn.find('.layui-layer-btn0').attr({
+                            href: 'http://www.layui.com/'
+                            , target: '_blank'
+                        });
+                    }
+                });
+            }
+            , offset: function (othis) {
+                var type = othis.data('type')
+                    , text = othis.text();
+
+                layer.open({
+                    type: 1
+                    , offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                    , id: 'layerDemo' + type //防止重复弹出
+                    , content: $('#k')
+                    , btn: '其他注册方式'
+                    , btnAlign: 'c' //按钮居中
+                    , shade: 0 //不显示遮罩
+                    , yes: function () {
+                        layer.closeAll();
+                    }
+                });
+            }
+        };
+
+        $('#layerDemo .layui-btn').on('click', function () {
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+
+    });
+</script>
+</html>

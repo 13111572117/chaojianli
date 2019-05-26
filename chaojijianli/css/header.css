@@ -1,0 +1,287 @@
+.zixun {
+    background-color: #ff4f4c;
+    position: fixed;
+    z-index: 15;
+    bottom: 20%;
+    right: 5%;
+    width: 68px;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+}
+.zixun button {
+    width: 68px;
+    height: 68px;
+    color: #fff;
+    font-size: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #ff4f4c;
+    /*margin-right: 5px;*/
+}
+
+.max-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.main-header {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #404040;
+}
+
+.header-logo img {
+    margin-left: 20%;
+    text-align: center;
+    width: 115px;
+    height: 35px;
+}
+
+.header-tittle li {
+    float: left;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.zhd-title {
+    border-bottom: 2px solid #FF4F4C;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.zhd-title a{
+    color: #FF4F4C;
+}
+.header-tittle a:hover {
+    color: #ff4f4c;
+}
+
+.header-tittle a {
+    display: block;
+    margin-top: 8px;
+}
+
+.header-home {
+    display: none;
+}
+
+.header-app .app-tubiao div {
+    font-size: 25px;
+    color: #9c9c9c;
+    margin-right: 30px;
+    margin-top: 8px;
+    float: left;
+}
+
+.header-app {
+    padding-left: 100px;
+}
+
+.ge a {
+    color: #9c9c9c;
+    display: block;
+    margin-top: -6px;
+    font-size: 30px;
+}
+
+.header-app .app-button {
+    float: left;
+}
+
+.app-button button:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid #ff4f4c;
+}
+
+.app-button button:nth-of-type(2) a {
+    color: #fff;
+}
+
+.app-button button:nth-of-type(1):hover a {
+    color: #fff;
+}
+
+.app-button button:nth-of-type(1):hover {
+    background-color: #ff4f4c;
+}
+.app-dl:hover{
+    /*background-color: #ff4f4c;*/
+}
+.app-button button:nth-of-type(3) {
+    display: none;
+}
+
+.app-dl a {
+    color: #ff4f4c;
+}
+
+.language {
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    left: -25px;
+    width: 70px;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+    box-shadow: 0px 0px 8px #ddd;
+    display: none;
+}
+
+.language a {
+    font-size: 15px;
+}
+
+.language li:nth-of-type(1) a {
+    color: #ff4f4c;
+}
+
+.app-earth:hover .language {
+    display: block;
+}
+
+.app-download {
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    top: 31px;
+    left: -25px;
+    width: 240px;
+    height: 307px;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+    box-shadow: 0px 0px 8px #ddd;
+    display: none;
+}
+
+.app-download h3 {
+    margin: 20px 0 10px 0;
+    font-size: 14px;
+    color: #404040;
+}
+
+.app-download img {
+    width: 160px;
+    height: 160px;
+}
+
+.app-download button {
+    padding-bottom: 5px;
+    color: #fff;
+    background-color: #ff4f4c;
+    border: #ff4f4c;
+    width: 160px;
+    height: 35px;
+}
+
+.app-download button:nth-of-type(2):hover {
+    color: #fff;
+    background-color: #ff4f4c;
+}
+
+.app-download button:nth-of-type(2) {
+    background-color: #fff;
+    color: #ff4f4c;
+    border: 1px solid #ff4f4c;
+}
+
+.app-iphone:hover .app-download {
+    display: block;
+}
+
+@media screen and (max-width: 1225px) {
+    .header-app {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-tittle {
+        display: none;
+    }
+
+    .header-home {
+        display: block;
+    }
+
+    .home-icon {
+        padding-left: 50px;
+        font-size: 30px;
+    }
+
+    .home-icon ul {
+        background: #fff;
+        width: 100%;
+        position: absolute;
+    }
+
+    .home-icon li {
+        text-align: center;
+        padding: 5px 5px 5px 5px;
+        font-size: 18px;
+        border-bottom: 1px solid #9b9b9b;
+        display: none;
+    }
+
+    .home-icon li:nth-of-type(5) {
+        border-bottom: none;
+    }
+
+    .home-icon li:hover {
+        border-left: 5px solid #ff4f4c;
+    }
+
+    .home-icon a:hover {
+        color: #ff4f4c;
+    }
+
+    .home-icon a {
+        color: #9b9b9b;
+    }
+
+    .home-icon:hover .home-ul > li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app-tubiao {
+        display: none;
+    }
+
+    .zixun {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .max-header {
+        width: 100%;
+    }
+
+    .header-home {
+        display: none;
+    }
+
+    .app-button button {
+        display: none;
+    }
+
+    .app-button button:nth-of-type(3) {
+        /*right: 0;*/
+        display: block;
+    }
+
+    .app-button {
+        position: relative;
+        right: -80%;
+    }
+
+    .app-button button {
+        float: right;
+    }
+}

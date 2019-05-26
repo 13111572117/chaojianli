@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <script type="text/javascript" src="./layui/layui.js"></script>
+    <script src="./js/zixunjiqiren.js"></script>
+    <title>名企内推</title>
+</head>
+<style>
+    body {
+        background: #F5F5F7;
+    }
+    .bian {
+        height: 155px;
+        ;
+        border: 1px solid #ececec;
+    }
+
+    .bian p {
+        padding: 24px;
+        font-size: 18px;
+        color: #404040;
+    }
+
+    .bian h2 {
+        font-size: 12px;
+        margin-bottom: 18px;
+        color: #909090;
+        height: 12px;
+        margin-top: -24px;
+        margin-left: 24px;
+    }
+
+    .bian h3 {
+        font-size: 14px;
+        color: #404040;
+        margin-left: 89px;
+        margin-top: -50px;
+
+    }
+
+    .bian img {
+        margin-left: 23px;
+        margin-top: 15px;
+
+    }
+
+    .bian span {
+        font-size: 16px;
+        color: #ff4f4c;
+        float: right;
+        margin-top: -90px;
+        margin-right: 24px;
+    }
+
+    .btn button {
+        margin-top: 15px;
+        margin-left: 24px;
+        color: #fff;
+        background-color: #ff4f4c;
+        border: #ff4f4c;
+        width: 95%;
+        height: 45px;
+    }
+
+    .btn button :hover {
+        color: #fff;
+        background-color: #ff4f4c;
+    }
+</style>
+
+<body>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <!--ji qi ren zi xun-->
+    <div class="jiqiren">
+        <div class="zixun site-demo-button" id="Zixun">
+            <button data-method="notice" class="layui-icon layui-icon-reply-fill layui-btn"></button>
+        </div>
+        <div id="Zixunk"
+             style="display: none;/*position: fixed;bottom: 50px;right:15%;transform: translateX(15%);*/z-index:10;width: 364px;height: 550px;background-color: #adadad">
+            <div style="height: 60px;font-size: 14px;background-color: #ff4f4c;color: #fff">
+                <i style="font-size: 40px;float: left;margin: 10px 0 0 10px"
+                   class="zixun-header layui-icon layui-icon-survey"></i>
+                <h3 style="float: left; margin: 20px 0 0 20px">超级简历机器人</h3>
+                <button style="float: right;background-color:#ff4f4c;border:0;color: #fff;margin: 20px 10px 0 0">一</button>
+            </div>
+            <div style="height:376px;padding: 20px 20px 0 20px;background-color: #f5f8fa" class="zixun-nav">
+                <p style="color: #9b9b9b;">超级简历机器人 10:05:45 </p>
+                <p style="width: 60%;padding:5px 5px 5px 5px;border-radius: 10px;background-color: #fff;">您好，很高兴为您服务！</p>
+            </div>
+            <div style="padding:10px 10px 10px 10px;background-color: #fff;" class="zixun-fasong">
+                <div class="rengong">
+                    <i style="font-size: 25px;color: #ff4f4c;" class="layui-icon layui-icon-praise"></i>
+                    <button style="border: 0;color: #999999;background-color: #fff;float: right">转人工</button>
+                </div>
+                <div style="margin: 10px 0 0 0 ;padding-bottom:20px" class="input">
+                    <input style="width: 80%;background-color: #fff;border: 0" type="text" class=""
+                           placeholder="很高兴为您服务，请描述您的问题">
+                    <button style="float: right;padding:0 5px 0 5px;margin: 15px 0 5px 0;">发送</button>
+                </div>
+            </div>
+            <div style="width: 100%;text-align: center;background-color: #eee;margin-top: 0px">
+                <p style="">Udesk提供客服软件支持</p>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="max-header layui-container">
+        <div class="main-header layui-row">
+            <div class="header-logo layui-col-lg3 layui-col-md2 layui-col-sm2 layui-col-xs4">
+                <a href="./chaojijianli.html"><img src="./images/chjjl-logo..png" alt=""></a>
+            </div>
+            <ul class="header-tittle layui-col-lg5 layui-col-md6">
+                <li>
+                    <a href="./jianlimoban.html">简历模板</a>
+                </li>
+                <li>
+                    <a href="./qiuzhixin.html">求职信</a>
+                </li>
+                <li>
+                    <a href="./jianligonglue.html">简历攻略</a>
+                </li>
+                <li>
+                    <a href="./zhenduan.html">简历诊断</a>
+                </li>
+                <li style="margin-left:40px;padding-left: 0px" class="zhd-title">
+                    <a href="./zhenduan.html">名企内推</a>
+                </li>
+            </ul>
+            <div class="header-home layui-col-sm5 layui-col-xs3">
+                <div class="home-icon layui-icon layui-icon-spread-left">
+                    <ul class="home-ul">
+                        <li>
+                            <a href="./jianlimoban.html">简历模板</a>
+                        </li>
+                        <li>
+                            <a href="./qiuzhixin.html">求职信</a>
+                        </li>
+                        <li>
+                            <a href="./jianligonglue.html">简历攻略</a>
+                        </li>
+                        <li>
+                            <a href="./zhenduan.html">简历诊断</a>
+                        </li>
+                        <li>
+                            <a href="./mingqineitui.html">名企内推</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-app layui-col-lg4 layui-col-md4 layui-col-sm5 layui-col-xs5">
+                <div class="app-tubiao">
+                    <div class="app-earth layui-icon layui-icon-website">
+                        <div class="language">
+                            <ul>
+                                <li><a href="">中文</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="app-iphone layui-icon layui-icon-cellphone">
+                        <div class="app-download">
+                            <h3>扫码下载App 同步编辑</h3>
+                            <img src="./images/appDownloadIcon.png" alt="">
+                            <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">App下载</button>
+                            <button style="margin: 10px 0 0 5%;" class="layui-btn layui-btn-primary">微信版</button>
+                        </div>
+                    </div>
+                    <div class="ge">
+                        <a href="">|</a>
+                    </div>
+                </div>
+                <div class="app-button">
+                    <button class="app-dl layui-btn layui-btn-danger"><a href="./登录注册/qitafanshidenglu.html">登录</a></button>
+                    <button class="layui-btn layui-btn-danger"><a href="./登录注册/qitafanshidenglu.html">注册</a></button>
+                    <button class="layui-btn layui-btn-md layui-btn-danger">导入模板</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="content" style="margin-top: 80px;">
+        <div class="layui-fluid">
+            <div class="layui-row">
+                <div class="layui-col-xs12 layui-col-md1 layui-col-sm1 layui-col-lg1 layui-hide-xs">
+                    <div style="background: #F5F5F7; height:1px;" class="grid-demo grid-demo-bg1"></div>
+                </div>
+                <div class="layui-col-xs12 layui-col-md10 layui-col-sm10 layui-col-lg10">
+
+                    <div class="layui-row layui-col-space30">
+                        <div class="layui-col-xs layui-col-md3 layui-col-sm3 layui-col-lg3 layui-hide-xs">
+                            <div style="background:#fff;height: 200px;285px; " class="grid-demo grid-demo-bg1">
+                                <div style=" height: 150px;">
+                                    <img src="images\denglu.png"
+                                        style="margin-right: 150px; height: 136px;width: 100%;">
+                                </div>
+                                <div><button style="display: block;margin: 0 auto;"
+                                        class="layui-btn layui-btn-danger layui-btn-sm">立即登录</button>
+                                </div>
+
+                                <div style="background:#fff;height:185px; margin-top: 35px;"
+                                    class="grid-demo grid-demo-bg1">
+                                    <a href="">
+                                        <blockquote style="background: #fff;height: 15px;" class="layui-elem-quote">
+                                            内推职位
+                                        </blockquote>
+                                        <i class="layui-icon layui-icon-right"
+                                            style="float:right; margin-top: -37px;"></i>
+                                    </a>
+                                    <hr>
+                                    <a href="">
+                                        <blockquote style="background: #fff;height: 15px;" class="layui-elem-quote">
+                                            领英职位
+                                        </blockquote>
+                                        <i class="layui-icon layui-icon-right"
+                                            style="float:right; margin-top: -37px;"></i>
+                                    </a>
+                                    <hr>
+                                    <a href="">
+                                        <blockquote style="background: #fff;height: 15px;" class="layui-elem-quote">
+                                            校招网申
+                                        </blockquote>
+                                        <i class="layui-icon layui-icon-right"
+                                            style="float:right; margin-top: -37px;"></i>
+                                    </a>
+                                </div>
+                                <div style="background:#fff;height: 320px; margin-top: 15px;"
+                                    class="grid-demo grid-demo-bg1">
+                                    <p style="text-align: center;font-size: 16px;font-weight: bold;padding:12px;">
+                                        手机电脑，同步管理
+                                    </p>
+                                    <h3 style="text-align: center;font-size: 15px;color: gray;">微信上也可以随时查看、 投递简历</h3>
+                                    <img style="display: block;margin: 0 auto;margin-top: 24px;"
+                                        src="images\jlL.png" />
+                                    <h2 style="text-align: center;font-size: 14px; color: gray;padding: 25px;">微信扫码 管理投递
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="layui-col-xs12 layui-col-md9 layui-col-sm9 layui-col-lg9">
+                            <div style="background:white;height: 1025px;">
+                                <div style="margin-top: -10px;" class="content-r">
+                                    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                                        <ul class="layui-tab-title">
+                                            <li style="color: black;font-size: 20px;" class="layui-this">内推职业</li>
+                                        </ul>
+                                    </div>
+                                    <div style="padding: 20px; background-color: #fff;cursor:pointer;">
+                                        <div class="layui-row layui-col-space15">
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>供应链管理实习生【可转正】</p>
+                                                    <h2>深圳 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\dkn.jpg" />
+                                                    <h3>迪卡侬</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>项目经理助理实习生</p>
+                                                    <h2>广州 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\th.png" />
+                                                    <h3>天弘基金</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="padding: 20px; background-color: #fff;margin-top: -24px;cursor:pointer;">
+                                        <div class="layui-row layui-col-space15">
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>投资分析实习生</p>
+                                                    <h2>上海 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\jr.png" />
+                                                    <h3>德同资本</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>北京财务中心实习生</p>
+                                                    <h2>北京 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\aj.png" />
+                                                    <h3>爱建xintuo</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="padding: 20px; background-color: #fff;margin-top: -24px;cursor:pointer;">
+                                        <div class="layui-row layui-col-space15">
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>产品部实习生招聘</p>
+                                                    <h2>深圳 | 经验不限 | 硕士及以上学历</h2>
+                                                    <img src="images\ax.jpg" />
+                                                    <h3>安信基金</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>人力实习生</p>
+                                                    <h2>广州 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\bgy.jpg" />
+                                                    <h3>碧桂园</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="padding: 20px; background-color: #fff;margin-top: -24px;cursor:pointer;">
+                                        <div class="layui-row layui-col-space15">
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>Tech Writer（PM）实习生</p>
+                                                    <h2>上海 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\intel.png" />
+                                                    <h3>英特尔</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>Java实习生</p>
+                                                    <h2>北京 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\haier.png" />
+                                                    <h3>海尔</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="padding: 20px; background-color: #fff;margin-top: -24px;cursor:pointer;">
+                                        <div class="layui-row layui-col-space15">
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>债券融资岗实习生</p>
+                                                    <h2>深圳 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\dx.jpg" />
+                                                    <h3>东兴证卷</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6 layui-col-sm6 layui-col-lg6">
+                                                <div class="bian grid-demo grid-demo-bg1">
+                                                    <p>人力资源共享服务中心实习生</p>
+                                                    <h2>广州 | 经验不限 | 本科及以上学历</h2>
+                                                    <img src="images\mars.png" />
+                                                    <h3>玛氏</h3>
+                                                    <span>面议</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn layui-row layui-hide-xs">
+                                        <button class="layui-btn layui-btn-primary">登陆查看你的内推职位</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="layui-col-xs12 layui-col-md1 layui-col-sm1 layui-col-lg1 layui-hide-xs">
+                    <div style="background: #F5F5F7;height: 1px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

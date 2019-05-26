@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>滑块</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<body>
+<div style="height: 100px"></div>
+<div style="width: 80%;margin-left: 10%" id="slideTest1"></div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use('slider', function(){
+        var slider = layui.slider;
+
+        //渲染
+        slider.render({
+            elem: '#slideTest1'  //绑定元素
+
+            ,setTips: function(value) { //自定义提示文本
+                return value + '%';
+            }
+            ,change: function(value){
+                console.log(value) //动态获取滑块数值
+                //do something
+            }
+        });
+    });
+</script>
+</body>
+</html>
